@@ -1,18 +1,21 @@
 package ejemplo01;
 
 public class Trabajador {
-	
+
 	private String nombre;
 	private String puesto;
 	private String dni;
-	private int numero;
 
-	public Trabajador(String nombre, String puesto, String dni, int numero) {
+	public Trabajador(String nombre, String puesto, String dni) {
 		super();
 		this.nombre = nombre;
 		this.puesto = puesto;
 		this.dni = dni;
-		this.numero = numero;
+	}
+
+	public Trabajador(String dni) {
+		super();
+		this.dni = dni;
 	}
 
 	public String getNombre() {
@@ -39,16 +42,12 @@ public class Trabajador {
 		this.dni = dni;
 	}
 
-	public int getNumero() {
-		return numero;
-	}
-
-	public void setNumero(int numero) {
-		this.numero = numero;
-	}
-
 	@Override
 	public String toString() {
-		return "Trabajador [nombre=" + nombre + ", puesto=" + puesto + ", dni=" + dni + ", numero=" + numero + "]";
-	}	
+		return "Trabajador [nombre=" + nombre + ", puesto=" + puesto + ", dni=" + dni + "]";
+	}
+
+	public double calcularPaga() {
+		return 0;
+	}
 }

@@ -17,6 +17,7 @@ public class Principal {
 		System.out.println(empleado.calcularPaga());
 		System.out.println(empleado2.calcularPaga());
 		System.out.println(consultor.calcularPaga());
+
 	}
 
 }

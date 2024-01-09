@@ -20,4 +20,9 @@ public class Consultor extends Trabajador {
 
 		return horas * tarifa;
 	}
+
+	public double calcularPagaV2() {
+
+		return super.calcularPagaV2() + horas * tarifa;
+	}
 }

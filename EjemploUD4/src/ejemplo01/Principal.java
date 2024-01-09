@@ -13,11 +13,21 @@ public class Principal {
 		System.out.println(empleado);
 		System.out.println(empleado2);
 
+		System.out.println();
 		System.out.println(trabajador.calcularPaga());
 		System.out.println(empleado.calcularPaga());
 		System.out.println(empleado2.calcularPaga());
 		System.out.println(consultor.calcularPaga());
+		System.out.println();
+		System.out.println(trabajador.calcularPagaV2());
+		System.out.println(empleado.calcularPagaV2());
+		System.out.println(empleado2.calcularPagaV2());
+		System.out.println(consultor.calcularPagaV2());
 
+		/*
+		 * Los metodos de una madre tienen parametros los metodos de las hijas deben de
+		 * tener el mismo parametro para que se una sobreescritura y no una sobrecarga
+		 */
 	}
 
 }

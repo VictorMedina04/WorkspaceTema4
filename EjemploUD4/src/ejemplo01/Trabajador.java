@@ -50,4 +50,10 @@ public class Trabajador {
 	public double calcularPaga() {
 		return 0;
 	}
+
+	// No es la version dos sino hacer otra forma de calcular la paga
+	public double calcularPagaV2() {
+		double fijo = 1000;
+		return fijo;
+	}
 }

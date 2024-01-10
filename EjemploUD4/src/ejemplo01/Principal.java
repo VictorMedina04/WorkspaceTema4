@@ -28,6 +28,17 @@ public class Principal {
 		 * Los metodos de una madre tienen parametros los metodos de las hijas deben de
 		 * tener el mismo parametro para que se una sobreescritura y no una sobrecarga
 		 */
+
+		consultor.avisarExtras();
+
+		trabajador.darDeBaja();
+
+		System.out.println(trabajador);
+
+		empleado.darDeBaja();
+
+		System.out.println(empleado);
+
 	}
 
 }

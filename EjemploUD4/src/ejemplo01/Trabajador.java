@@ -56,4 +56,8 @@ public class Trabajador {
 		double fijo = 1000;
 		return fijo;
 	}
+
+	public void darDeBaja() {
+		puesto = "baja";
+	}
 }

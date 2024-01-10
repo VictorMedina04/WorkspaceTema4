@@ -25,4 +25,10 @@ public class Consultor extends Trabajador {
 
 		return super.calcularPagaV2() + horas * tarifa;
 	}
+
+	public void avisarExtras() {
+		if (horas > 40) {
+			System.out.println("Ha superado el número de horas permitido");
+		}
+	}
 }

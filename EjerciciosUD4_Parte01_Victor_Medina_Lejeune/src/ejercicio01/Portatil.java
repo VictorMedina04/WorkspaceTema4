@@ -28,4 +28,14 @@ public class Portatil extends Ordenador {
 		this.precioSeguro = precioSeguro;
 	}
 
+	public double calcularPVP(double porcentaje) {
+		double pvp;
+		if (seguroPantalla) {
+			pvp = super.calcularPVP(porcentaje) + precioSeguro;
+		}
+		pvp = super.calcularPVP(porcentaje);
+
+		return pvp;
+	}
+
 }

@@ -18,7 +18,10 @@ public class Sobremesa extends Ordenador {
 		this.precioMontaje = precioMontaje;
 	}
 
-	public double calcularPrecioVentaAlPublico(double porcentaje) {
+	public double calcularPVP(double porcentaje) {
+		double pvp;
+		pvp = super.calcularPVP(porcentaje) + precioMontaje;
 
+		return pvp;
 	}
 }

@@ -63,7 +63,7 @@ public class Ordenador {
 				+ ", precioBase=" + precioBase + ", marca=" + marca + "]";
 	}
 
-	public double calcularPrecioVentaAlPublico(double porcentaje) {
+	public double calcularPVP(double porcentaje) {
 
 		double precioVentaPublico;
 		int cien = 100;

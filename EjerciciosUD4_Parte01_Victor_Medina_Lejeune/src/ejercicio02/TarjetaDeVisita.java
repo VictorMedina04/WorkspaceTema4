@@ -11,14 +11,11 @@ public class TarjetaDeVisita extends Documento {
 		this.numeroContacto = numeroContacto;
 	}
 
-	public void imprimirTarjeta() {
-		System.out.println("----------------------------------------------------");
-		System.out.println("Empresa:" + super.nombreEmpresa);
-		System.out.println("Equipo directivo:" + super.nombreJefe);
-		System.out.println("Dirección:" + super.direccion);
+	public void imprimir() {
+		super.imprimir();
 		System.out.println("DNI:" + dni);
 		System.out.println("Número de contacto:" + numeroContacto);
-		System.out.println("----------------------------------------------------");
+
 	}
 
 }

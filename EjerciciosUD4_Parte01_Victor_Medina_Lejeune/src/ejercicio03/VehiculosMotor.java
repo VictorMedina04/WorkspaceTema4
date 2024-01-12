@@ -43,19 +43,24 @@ public class VehiculosMotor {
 				+ ", categoriaEmisiones=" + categoriaEmisiones + "]";
 	}
 
-	public double calcularImpuesto() {
+	public double calcularImpuesto(double porcentajeCilindrada, double porcentajeCaballos) {
 		double impuesto = 0;
-		if (categoriaEmisiones == 1) {
+		switch (categoriaEmisiones) {
+		case 1:
 			impuesto = 50;
-		}
-		if (categoriaEmisiones == 2) {
+			break;
+		case 2:
 			impuesto = 100;
-		}
-		if (categoriaEmisiones == 3) {
+			break;
+		case 3:
 			impuesto = 150;
-		}
-		if (categoriaEmisiones == 4) {
+			break;
+		case 4:
 			impuesto = 200;
+			break;
+		default:
+			System.out.println("Introduzca una categoria posible");
+			break;
 		}
 		return impuesto;
 	}

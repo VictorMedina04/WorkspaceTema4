@@ -9,12 +9,20 @@ public class Furgoneta extends VehiculosMotor {
 		this.transporteMercancia = transporteMercancia;
 	}
 
-	public double calcularImpuesto() {
+	public boolean isTransporteMercancia() {
+		return transporteMercancia;
+	}
+
+	public void setTransporteMercancia(boolean transporteMercancia) {
+		this.transporteMercancia = transporteMercancia;
+	}
+
+	public double calcularImpuesto(double porcentajeCilindrada, double porcentajeCaballos) {
 		double impuestoPotencia = 0;
 		if (transporteMercancia) {
 			impuestoPotencia = 150;
 		}
-		return super.calcularImpuesto() + impuestoPotencia;
+		return super.calcularImpuesto(porcentajeCilindrada, porcentajeCaballos) + impuestoPotencia;
 	}
 
 }

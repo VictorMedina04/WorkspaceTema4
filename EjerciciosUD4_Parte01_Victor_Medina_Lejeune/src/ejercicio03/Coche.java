@@ -9,10 +9,18 @@ public class Coche extends VehiculosMotor {
 		this.potenciaCaballos = potenciaCaballos;
 	}
 
-	public double calcularImpuesto() {
-		double porcentaje = 25;
+	public double getPotenciaCaballos() {
+		return potenciaCaballos;
+	}
+
+	public void setPotenciaCaballos(double potenciaCaballos) {
+		this.potenciaCaballos = potenciaCaballos;
+	}
+
+	public double calcularImpuesto(double porcentajeCilindrada, double porcentajeCaballos) {
 		int cien = 100;
-		return super.calcularImpuesto() + (super.calcularImpuesto() * porcentaje / cien);
+		return super.calcularImpuesto(porcentajeCilindrada, porcentajeCaballos)
+				+ (potenciaCaballos * porcentajeCaballos / cien);
 	}
 
 }

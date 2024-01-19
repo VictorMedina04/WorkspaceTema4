@@ -34,6 +34,8 @@ public class Alimentacion extends Producto {
 		}
 	}
 
+	// metodo q meta un impuesto si esta caducado
+
 	public double calcularTotal() {
 		double total = 0;
 		return total;

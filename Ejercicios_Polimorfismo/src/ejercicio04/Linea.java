@@ -32,10 +32,10 @@ public class Linea {
 		return "" + producto + "\t cantidad  " + cantidadProducto + "";
 	}
 
+	// ta bien
 	public double calcularTotal() {
 		double total = 0;
 
-		total = producto.calcularTotal() * cantidadProducto;
-		return total;
+		return producto.calcularTotal() * cantidadProducto;
 	}
 }

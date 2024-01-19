@@ -22,6 +22,7 @@ public class Electronica extends Producto {
 		return "" + super.toString() + " impuestoLujo  " + impuestoLujo + "";
 	}
 
+	// ta bien
 	public double calcularTotal() {
 		double total = 0;
 		int cien = 100;

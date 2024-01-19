@@ -44,8 +44,9 @@ public class Producto {
 
 	public double calcularTotal() {
 
-		double total = 0;
+		double total = precioUnitario;
 
+		// precioU + precioU * iva/100
 		return total;
 	}
 }

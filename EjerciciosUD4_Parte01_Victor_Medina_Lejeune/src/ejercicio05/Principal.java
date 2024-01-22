@@ -7,26 +7,22 @@ public class Principal {
 		Empleado empleado2 = new Vendedor("Alvaro", "Garcia", 1500, 2, 45, 5);
 		Empleado empleado3 = new Gerente("Fernando", "Alvarez", 1600, 4, 10);
 
-		int objetivoVentas = 20;
+		double objetivoVentas = 20;
 		int tam = 3;
 		Empleado[] lista = new Empleado[tam];
 
-		lista[0] = empleado;
-		lista[1] = empleado2;
-		lista[2] = empleado3;
+		int numEmpleados = 0;
 
-		Oficina oficina = new Oficina(lista);
+		Oficina oficina = new Oficina(lista, numEmpleados);
+
+		oficina.addArray(empleado);
+		oficina.addArray(empleado2);
+		oficina.addArray(empleado3);
 
 		System.out.println("Calcular gastos de la oficina:");
 		System.out.println(oficina.calcularGastosOficina());
 		System.out.println();
 
-		System.out.println("Sueldo de Pablo");
-		System.out.println(oficina.calcularSueldoEmpleado(empleado));
-		System.out.println("Sueldo de Alvaro");
-		System.out.println(oficina.calcularSueldoEmpleado(empleado2));
-		System.out.println("Sueldo de Fernando");
-		System.out.println(oficina.calcularSueldoEmpleado(empleado3));
-
+		oficina.mostrarEmpleados(objetivoVentas);
 	}
 }

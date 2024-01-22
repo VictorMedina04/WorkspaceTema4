@@ -19,7 +19,7 @@ public class Gerente extends Empleado {
 
 	@Override
 	public String toString() {
-		return "Gerente [impuestoGerente=" + impuestoGerente + "]";
+		return "" + super.toString() + ", impuestoGerente=" + impuestoGerente + "";
 	}
 
 	public double calcularSueldo() {

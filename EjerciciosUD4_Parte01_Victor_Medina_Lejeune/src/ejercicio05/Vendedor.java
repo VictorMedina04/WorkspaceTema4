@@ -2,21 +2,21 @@ package ejercicio05;
 
 public class Vendedor extends Empleado {
 
-	private int cantidadVentas;
+	private double cantidadVentas;
 	private double incentivo;
 
-	public Vendedor(String nombre, String apellido, double sueldoBase, int numero_empleado, int cantidadVentas,
+	public Vendedor(String nombre, String apellido, double sueldoBase, int numero_empleado, double cantidadVentas,
 			double incentivo) {
 		super(nombre, apellido, sueldoBase, numero_empleado);
 		this.cantidadVentas = cantidadVentas;
 		this.incentivo = incentivo;
 	}
 
-	public int getCantidadVentas() {
+	public double getCantidadVentas() {
 		return cantidadVentas;
 	}
 
-	public void setCantidadVentas(int cantidadVentas) {
+	public void setCantidadVentas(double cantidadVentas) {
 		this.cantidadVentas = cantidadVentas;
 	}
 
@@ -30,10 +30,10 @@ public class Vendedor extends Empleado {
 
 	@Override
 	public String toString() {
-		return "Vendedor [cantidadVentas=" + cantidadVentas + ", incentivo=" + incentivo + "]";
+		return "" + super.toString() + ", cantidadVentas=" + cantidadVentas + ", incentivo=" + incentivo + "";
 	}
 
-	public void felicitar(int objetivoVentas) {
+	public void felicitar(double objetivoVentas) {
 		if (cantidadVentas > objetivoVentas) {
 			System.out.println("Felicidades has superado el objetivo del mes");
 		}

@@ -14,9 +14,9 @@ public class Principal {
 		Cuenta cuentaCorriente, cuentaJoven, cuentaEmpresa, lista[] = new Cuenta[tam];
 		Oficina oficina;
 
-		cliente = new Cliente("Israel", "Alcaraz Martínez", 25, "isal24");
-		cliente2 = new Cliente("Maria", "Esther Herrera", 16, "maes07");
-		cliente3 = new Cliente("Julio", "Vega Martoran", 30, "juve75");
+		cliente = new Cliente("Victoria", "de Borbón", 25, "vicbor12");
+		cliente2 = new Cliente("Padme", "Amidala", 16, "padami33");
+		cliente3 = new Cliente("Pepe", "Vega de Toro", 30, "peveto75");
 
 		cuentaCorriente = new CuentaCorriente(cliente, saldo1, mantenimiento);
 		cuentaJoven = new CuentaJoven(cliente2, saldo2);

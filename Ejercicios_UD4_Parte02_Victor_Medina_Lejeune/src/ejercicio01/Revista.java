@@ -2,8 +2,24 @@ package ejercicio01;
 
 public class Revista extends Publicaciones {
 
-	public Revista(int anyo, boolean prestado, String nombre) {
+	private int edicion;
+
+	public Revista(int anyo, boolean prestado, String nombre, int edicion) {
 		super(anyo, prestado, nombre);
+		this.edicion = edicion;
+	}
+
+	public int getEdicion() {
+		return edicion;
+	}
+
+	public void setEdicion(int edicion) {
+		this.edicion = edicion;
+	}
+
+	@Override
+	public String toString() {
+		return "" + super.toString() + "edicion=" + edicion + "";
 	}
 
 	public int cuentaPrestados(Publicaciones[] publicaciones) {
@@ -26,5 +42,11 @@ public class Revista extends Publicaciones {
 			}
 		}
 		return num_anteriores;
+	}
+
+	public void avisoRevista(int num) {
+		if (edicion == num) {
+			System.out.println("Enhorabuena");
+		}
 	}
 }

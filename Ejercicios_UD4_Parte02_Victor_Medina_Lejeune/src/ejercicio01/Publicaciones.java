@@ -37,8 +37,13 @@ public abstract class Publicaciones implements IImplementacion {
 		this.nombre = nombre;
 	}
 
-	// METODOS
-	public abstract int cuentaPrestados(Publicaciones[] publicaciones);
+	@Override
+	public String toString() {
+		return "Publicaciones [anyo=" + anyo + ", prestado=" + prestado + ", nombre=" + nombre + "]";
+	}
 
-	public abstract int publicacionesAnteriores(Publicaciones[] publicaciones, int anyo_comprobar);
+	// METODOS
+	public abstract int cuentaPrestados(Publicaciones[] lista);
+
+	public abstract int publicacionesAnteriores(Publicaciones[] lista, int anyo_comprobar);
 }

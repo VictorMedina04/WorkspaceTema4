@@ -21,24 +21,16 @@ public class CuentaEmpresa extends Cuenta {
 	}
 
 	public void ingresarDinero(double cantidad) {
-		double total = 0;
-
 		extra += 1;
-		total = super.getSaldo() + cantidad;
-		super.setSaldo(total);
+		super.setSaldo(super.getSaldo() + cantidad);
 	}
 
 	public void retirarDinero(double cantidad) {
-		double total = 0;
 
 		if (cantidad < super.getSaldo()) {
 
-			total = super.getSaldo() - (cantidad + 1);
-			super.setSaldo(total);
+			super.setSaldo(super.getSaldo() - (cantidad + 1));
 
-		} else {
-
-			System.out.println("No puede retirar mas de lo que hay en la cuenta");
 		}
 	}
 }

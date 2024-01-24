@@ -21,24 +21,18 @@ public class CuentaCorriente extends Cuenta {
 	}
 
 	public void ingresarDinero(double cantidad) {
-		double total = 0, cien = 100.0;
+		double cien = 100.0;
 
-		total = getSaldo() + cantidad;
 		puntos = cantidad * cien;
-		super.setSaldo(total);
+		super.setSaldo(getSaldo() + cantidad);
 	}
 
 	public void retirarDinero(double cantidad) {
-		double total = 0;
 
 		if (cantidad < getSaldo()) {
 
-			total = getSaldo() - cantidad;
-			setSaldo(total);
+			setSaldo(getSaldo() - cantidad);
 
-		} else {
-
-			System.out.println("No puede retirar mas de lo que hay en la cuenta");
 		}
 	}
 }

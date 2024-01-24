@@ -2,7 +2,7 @@ package ejercicio01;
 
 public interface IImplementacion {
 
-	int cuentaPrestados(Publicaciones[] publicaciones);
+	int cuentaPrestados(Publicaciones[] lista);
 
-	int publicacionesAnteriores(Publicaciones[] publicaciones, int anyo_comprobar);
+	int publicacionesAnteriores(Publicaciones[] lista, int anyo_comprobar);
 }

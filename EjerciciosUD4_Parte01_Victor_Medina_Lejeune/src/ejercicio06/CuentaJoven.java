@@ -21,25 +21,19 @@ public class CuentaJoven extends Cuenta {
 	}
 
 	public void ingresarDinero(double cantidad) {
-		double total = 0, uno = 1;
+		double uno = 1;
 
 		regalo += uno;
-		total = getSaldo() + cantidad + uno;
 
-		setSaldo(total);
+		setSaldo(getSaldo() + cantidad + uno);
 	}
 
 	public void retirarDinero(double cantidad) {
-		double total = 0;
 
 		if (cantidad < getSaldo()) {
 
-			total = getSaldo() - cantidad;
-			setSaldo(total);
+			setSaldo(getSaldo() - cantidad);
 
-		} else {
-
-			System.out.println("No puede retirar mas de lo que hay en la cuenta");
 		}
 	}
 }

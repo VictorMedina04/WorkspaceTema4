@@ -17,7 +17,7 @@ public class Trabajador implements IImpuesto {
 	@Override
 	public double calculoIrpf(double sueldo) {
 
-		return sueldo - sueldo * irpf / 100;
+		return sueldo * irpf / 100;
 	}
 
 }

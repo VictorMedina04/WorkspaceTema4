@@ -4,7 +4,8 @@ public class Producto implements IImpuesto {
 
 	@Override
 	public double calculoIva(double precio, int iva) {
-		return precio + precio * iva;
+		int cien = 100;
+		return precio + precio * iva / cien;
 	}
 
 	@Override
